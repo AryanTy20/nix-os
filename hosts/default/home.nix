@@ -16,6 +16,8 @@
     lsd
     zsh
     oh-my-posh
+    nerd-fonts._0xproto
+    nerd-fonts.droid-sans-mono
   ];
 
 
@@ -27,13 +29,6 @@
   home.sessionVariables = {
     # EDITOR = "emacs"; # Uncomment and set your preferred editor
   };
-
-  fonts.packages = [
-    ...
-    pkgs.nerd-fonts._0xproto
-    pkgs.nerd-fonts.droid-sans-mono
-  ]
-
 
   # Enable Home Manager
   programs.home-manager.enable = true;
