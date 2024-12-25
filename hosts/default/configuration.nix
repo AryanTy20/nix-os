@@ -111,6 +111,7 @@
     btop     # Resource monitor for system processes and usage.
     neofetch # A command-line system information tool.
     vscode   # Visual Studio Code, a popular code editor (unfree).
+    home-manager
   ];
 
   # Allow Visual Studio Code (VSCode), which is an "unfree" package, to be installed.
@@ -131,6 +132,9 @@
 
   # Disable the firewall if necessary (not recommended for most systems).
   # networking.firewall.enable = false;
+
+  # Allow nix os flakes
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   ##################
   # System Versioning
