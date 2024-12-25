@@ -16,7 +16,6 @@
     lsd
     zsh
     oh-my-posh
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
 
@@ -29,6 +28,11 @@
     # EDITOR = "emacs"; # Uncomment and set your preferred editor
   };
 
+  fonts.packages = [
+    ...
+    pkgs.nerd-fonts._0xproto
+    pkgs.nerd-fonts.droid-sans-mono
+  ]
 
 
   # Enable Home Manager
